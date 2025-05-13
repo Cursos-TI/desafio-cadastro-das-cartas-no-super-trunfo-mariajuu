@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h> //adicionei para usar a função de colocar o estado com espaçamento se a pessoa quiser
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
