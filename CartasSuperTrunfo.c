@@ -2,9 +2,6 @@
 #include <string.h> //adicionei para usar a função de colocar o estado com espaçamento se a pessoa quiser
 
 int main() {
-
-
-    
     char estado, estadoo; //uma letra de 'A' a 'H' representando um dos 8 estados;
     char codigo[3], codigo1[3]; //a letra do estado e um numero  de 01 a 04;
     char cidade[25], cidade1[25]; //variavel para armazenar o nome da cidade;
@@ -12,11 +9,9 @@ int main() {
     float area, area1; //area em km2 da cidade;
     float pib, pib1; //produto interno bruto em reais da cidade;
     int pontos, pontos1; //quantidade de pontos turisticos da cidade;
-
     float densidade1; // densidade populacional
     float percapta1; // pib per capita
-
-    float densidade2;
+    float densidade2; 
     float percapta2;
 
     printf("Carta 1:\n");
@@ -97,9 +92,16 @@ int resultadoPopulacao, resultadoArea, resultadoPib, resultadoPontos, resultadoD
   resultadoDensidade = densidade1 > densidade2;
   resultadoPercapta = percapta1 > percapta2;
   resultadoSuperpoder = superpoder1 > superpoder2;
-       
-
-
+     printf("\n\n");
+       printf("Comparação das Cartas:\n");
+       printf("Se o resultado for 1, a carta 1 ganha da carta 2, se for 0, a carta 2 ganha da carta 1.\n");
+      printf("População: %d\n", resultadoPopulacao);
+      printf("Área: %d\n", resultadoArea);
+      printf("PIB: %d\n", resultadoPib);
+      printf("Pontos Turísticos: %d\n", resultadoPontos);
+      printf("Densidade Populacional: %d\n", resultadoDensidade);
+      printf("PIB per Capita: %d\n", resultadoPercapta);
+      printf("Super Poder: %d\n", resultadoSuperpoder);
 return 0; //para indicar que o programa terminou com sucesso;
 
 }
