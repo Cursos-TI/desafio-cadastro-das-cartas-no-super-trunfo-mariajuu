@@ -89,7 +89,7 @@ int resultadoPopulacao, resultadoArea, resultadoPib, resultadoPontos, resultadoD
   resultadoArea = area > area1;
   resultadoPib = pib > pib1;
   resultadoPontos = pontos > pontos1;
-  resultadoDensidade = densidade1 > densidade2;
+  resultadoDensidade = densidade1 < densidade2;
   resultadoPercapta = percapta1 > percapta2;
   resultadoSuperpoder = superpoder1 > superpoder2;
      printf("\n\n");
@@ -102,6 +102,16 @@ int resultadoPopulacao, resultadoArea, resultadoPib, resultadoPontos, resultadoD
       printf("Densidade Populacional: %d\n", resultadoDensidade);
       printf("PIB per Capita: %d\n", resultadoPercapta);
       printf("Super Poder: %d\n", resultadoSuperpoder);
+    printf("\n\n");
+    printf("Comparação de cartas (Atributo: População):\n");
+    printf("Carta 1: %s: %u\n", cidade, populacao);
+    printf("Carta 2: %s: %u\n", cidade1, populacao1);
+    if (populacao > populacao1) {
+      printf("Resultado: Carta 1 venceu!");
+    } 
+    else {
+      printf("Resultado: Carta 2 venceu!");
+    }
 return 0; //para indicar que o programa terminou com sucesso;
 
 }
